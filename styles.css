@@ -1,0 +1,49 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button{
+    background-color:rgb(175, 89, 255);
+    color: pink;
+    width: 100px;
+    padding: 15px 10px;
+    border: 2px solid pink;
+    transition: all 500ms;
+}
+
+button:hover{
+    background-color: rgb(138, 138, 255);
+    transform: rotate(180deg);
+    box-shadow: 10px 10px 25px rgb(146, 74, 86);
+}
+
+.loop{
+animation: loop 500ms infinite;
+}
+
+@keyframes loop {
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+.circulo {
+    width: 400px;
+    height: 200px;
+    border-radius: 60%;
+    background-image: url("./1.webp");
+    animation: circulo 2s;
+}
+@keyframes circulo{
+    50%{
+        transform: rotate(-40deg);
+    }
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
